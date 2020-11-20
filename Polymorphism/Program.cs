@@ -6,9 +6,25 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.WriteLine("Hi.....");
-            Console.WriteLine("Hi hello.....");
+            Adult ad = new Adult();
+            ad.FirstName = "prutha";
+            ad.LastName = "biho";
+            Console.WriteLine("the name is:", ad.FirstName);
+            Console.WriteLine("the name is:", ad.LastName);
+
+
+        }
+        public class Adult
+        {
+
+            public string FirstName;
+            public string LastName;
+            
+        }
+        public class Child
+        {
+            public string FirstName;
+            public string LastName;
         }
     }
 }
